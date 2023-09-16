@@ -1,0 +1,11 @@
+tasks:
+  run:
+    command: 'bun run src/main.ts'
+    platform: 'system'
+    local: true
+    inputs:
+      - '@globs(sources)'
+
+fileGroups:
+  sources:
+    - "src/**/*"

@@ -32,6 +32,9 @@
       "path": "packages/frontend"
     },
     {
+      "path": "packages/protocol"
+    },
+    {
       "path": "packages/shared"
     }
   ]

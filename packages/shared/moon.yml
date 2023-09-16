@@ -1,0 +1,6 @@
+language: "javascript"
+
+tasks:
+  build:
+    command: "echo No build task defined for this package"
+    platform: "system"

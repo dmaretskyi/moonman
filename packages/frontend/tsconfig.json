@@ -23,6 +23,9 @@
   ],
   "references": [
     {
+      "path": "../protocol"
+    },
+    {
       "path": "../shared"
     },
     {

@@ -1,6 +1,19 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../.moon/cache/types/packages/shared"
-  }
+    "outDir": "../../.moon/cache/types/packages/shared",
+    "paths": {
+      "protocol": [
+        "../protocol/src/index.ts"
+      ],
+      "protocol/*": [
+        "../protocol/src/*"
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "../protocol"
+    }
+  ]
 }

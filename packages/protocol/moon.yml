@@ -1,0 +1,14 @@
+language: "bash"
+
+tasks:
+  build:
+    command: /bin/zsh -c 'PATH="$(pnpm -w bin):$PATH" protoc --ts_out src/gen --proto_path proto proto/person.proto'
+    platform: "system"
+    options:
+      shell: true
+    inputs:
+      - "@group(protobuf)"
+
+fileGroups:
+  protobuf:
+    - "proto/**/*"

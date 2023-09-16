@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@protobuf-ts/plugin':
+        specifier: ^2.9.1
+        version: 2.9.1
       '@types/react':
         specifier: ^18.2.15
         version: 18.2.21
@@ -60,15 +63,17 @@ importers:
         specifier: workspace:*
         version: link:../shared
 
+  packages/protocol:
+    dependencies:
+      '@protobuf-ts/runtime':
+        specifier: latest
+        version: 2.9.1
+
   packages/shared:
     dependencies:
-      typescript:
-        specifier: ^5.0.0
-        version: 5.2.2
-    devDependencies:
-      bun-types:
-        specifier: latest
-        version: 1.0.2
+      protocol:
+        specifier: workspace:*
+        version: link:../protocol
 
 packages:
 
@@ -352,6 +357,38 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
     dev: true
+
+  /@protobuf-ts/plugin-framework@2.9.1:
+    resolution: {integrity: sha512-/4sHdsXjp6KKkbpcCLUHpMfdYsCaqqQHRAwoxVzHmltsotw06B/K9HglZtkQx0IpLO4eeF3vNr3n7qzjD3e2zA==}
+    dependencies:
+      '@protobuf-ts/runtime': 2.9.1
+      typescript: 3.9.10
+    dev: true
+
+  /@protobuf-ts/plugin@2.9.1:
+    resolution: {integrity: sha512-svkFSyFgTtaLdDFPGvd6cTu8qK5Nul5RizDCTcv0xWRzcPWtMiqbuCLKCv6E9gdpnAs3MPeQTnSABB2+NhfWBg==}
+    hasBin: true
+    dependencies:
+      '@protobuf-ts/plugin-framework': 2.9.1
+      '@protobuf-ts/protoc': 2.9.1
+      '@protobuf-ts/runtime': 2.9.1
+      '@protobuf-ts/runtime-rpc': 2.9.1
+      typescript: 3.9.10
+    dev: true
+
+  /@protobuf-ts/protoc@2.9.1:
+    resolution: {integrity: sha512-/q2iVDwVDijfZlFZnnm3W6ALbybNskNSww88TfYBaJH49PuQMqhcXUPRu28UouJr9sc/Lr5k6t0TB9Nff3UIsA==}
+    hasBin: true
+    dev: true
+
+  /@protobuf-ts/runtime-rpc@2.9.1:
+    resolution: {integrity: sha512-pzO20J6s07LTWcj8hKAXh/dAacU5HIVir6SANKXXH8G0pn0VIIB4FFECq5Hbv25/8PQoOGZ7iApq/DMHaSjGhg==}
+    dependencies:
+      '@protobuf-ts/runtime': 2.9.1
+    dev: true
+
+  /@protobuf-ts/runtime@2.9.1:
+    resolution: {integrity: sha512-ZTc8b+pQ6bwxZa3qg9/IO/M/brRkvr0tic9cSGgAsDByfPrtatT2300wTIRLDk8X9WTW1tT+FhyqmcrbMHTeww==}
 
   /@swc/core-darwin-arm64@1.3.85:
     resolution: {integrity: sha512-jTikp+i4nO4Ofe6qGm4I3sFeebD1OvueBCHITux5tQKD6umN1c2z4CRGv6K49NIz/qEpUcdr6Qny6K+3yibVFQ==}
@@ -1429,10 +1466,17 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /typescript@3.9.10:
+    resolution: {integrity: sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
   /typescript@5.2.2:
     resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: true
 
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}

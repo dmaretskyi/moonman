@@ -1,0 +1,2 @@
+implicitDeps:
+  - '^:build'

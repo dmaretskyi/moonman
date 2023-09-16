@@ -1,3 +1,3 @@
-import { MESSAGE } from 'shared'
+import { MESSAGE, Person } from 'shared'
 
-console.log(MESSAGE)
+console.log(Person)

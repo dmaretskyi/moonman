@@ -1,5 +1,8 @@
 {
   "name": "backend",
   "module": "src/main.ts",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "shared": "workspace:*"
+  }
 }

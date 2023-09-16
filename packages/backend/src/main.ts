@@ -1,1 +1,3 @@
-console.log('Hello World')
+import { MESSAGE } from 'shared'
+
+console.log(MESSAGE)

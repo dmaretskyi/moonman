@@ -1,6 +1,7 @@
 {
   "name": "protocol",
   "type": "module",
+  "module": "src/index.ts",
   "dependencies": {
     "@protobuf-ts/runtime": "latest"
   }

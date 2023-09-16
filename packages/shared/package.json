@@ -1,6 +1,7 @@
 {
   "name": "shared",
   "type": "module",
+  "module": "src/index.ts",
   "dependencies": {
     "protocol": "workspace:*"
   }

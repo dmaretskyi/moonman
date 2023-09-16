@@ -26,6 +26,10 @@ export interface Person {
      * @generated from protobuf field: optional bytes data = 5;
      */
     data?: Uint8Array;
+    /**
+     * @generated from protobuf field: string phone = 4;
+     */
+    phone: string;
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class Person$Type extends MessageType<Person> {
@@ -34,7 +38,8 @@ class Person$Type extends MessageType<Person> {
             { no: 1, name: "name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 2, name: "id", kind: "scalar", T: 4 /*ScalarType.UINT64*/, L: 0 /*LongType.BIGINT*/ },
             { no: 3, name: "years", kind: "scalar", jsonName: "baz", T: 5 /*ScalarType.INT32*/ },
-            { no: 5, name: "data", kind: "scalar", opt: true, T: 12 /*ScalarType.BYTES*/ }
+            { no: 5, name: "data", kind: "scalar", opt: true, T: 12 /*ScalarType.BYTES*/ },
+            { no: 4, name: "phone", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
         ]);
     }
 }

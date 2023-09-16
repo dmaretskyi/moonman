@@ -1,3 +1,3 @@
 import { MESSAGE, Person } from 'shared'
 
-console.log(Person)
+console.log(Person.fields.length)

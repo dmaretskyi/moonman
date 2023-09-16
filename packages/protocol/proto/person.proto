@@ -9,4 +9,6 @@ message Person {
     int32 years = 3 [json_name = "baz"];
     // maybe a jpeg?
     optional bytes data = 5;
+
+    string phone = 4;
 }

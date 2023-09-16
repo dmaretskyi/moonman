@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "../../.moon/cache/types/packages/frontend",
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",

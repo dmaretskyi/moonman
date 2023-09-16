@@ -2,5 +2,5 @@ language: "javascript"
 
 tasks:
   build:
-    command: "echo No build task defined for this package"
+    command: "echo No build task required for this package"
     platform: "system"

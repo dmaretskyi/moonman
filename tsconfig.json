@@ -14,6 +14,9 @@
     "downlevelIteration": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
@@ -24,6 +27,9 @@
   "references": [
     {
       "path": "packages/backend"
+    },
+    {
+      "path": "packages/frontend"
     },
     {
       "path": "packages/shared"

@@ -1,0 +1,7 @@
+language: "javascript"
+
+tasks:
+  build:
+    command: esbuild --bundle --platform=neutral --outdir=dist src/root.ts
+    inputs:
+      - "@group(sources)"

@@ -1,14 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": [
-      "ESNext",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "outDir": "../../.moon/cache/types/packages/frontend",
+    "outDir": "dist/types",
     "paths": {
       "shared": [
         "../shared/src/index.ts"
@@ -27,9 +20,6 @@
     },
     {
       "path": "../shared"
-    },
-    {
-      "path": "./tsconfig.node.json"
     }
   ]
 }

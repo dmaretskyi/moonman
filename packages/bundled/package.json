@@ -1,0 +1,6 @@
+{
+  "name": "bundled",
+  "type": "module",
+  "module": "dist/root.js",
+  "types": "dist/types/src/root.d.ts"
+}

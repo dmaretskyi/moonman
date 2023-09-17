@@ -3,3 +3,5 @@ export * from 'protocol'
 import { Person } from 'protocol';
 
 export const FIELD_COUNT = Person.fields.length;
+
+export * from 'bundled';

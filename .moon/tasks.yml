@@ -1,2 +1,13 @@
 implicitDeps:
   - '^:build'
+
+fileGroups:
+  sources:
+    - "src/**/*"
+  protobuf:
+    - "proto/**/*"
+  vite:
+    - "src/**/*"
+    - "env.d.ts"
+    - "index.html"
+    - "vite.config.*"

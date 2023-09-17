@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../.moon/cache/types/packages/shared",
+    "outDir": "dist/types",
     "paths": {
       "protocol": [
         "../protocol/src/index.ts"
@@ -12,6 +12,9 @@
     }
   },
   "references": [
+    {
+      "path": "../bundled"
+    },
     {
       "path": "../protocol"
     }

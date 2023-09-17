@@ -3,6 +3,7 @@
   "type": "module",
   "module": "src/index.ts",
   "dependencies": {
-    "protocol": "workspace:*"
+    "protocol": "workspace:*",
+    "bundled": "workspace:*"
   }
 }
